@@ -1,17 +1,17 @@
-Leer dia
-Leer mes
-Leer año
+Leer A
+Leer B
+Leer C
 
-correcta = Falso
-
-Si mes >= 1 Y mes <= 12 Entonces
-    Si dia >= 1 Y dia <= 31 Entonces
-        correcta = Verdadero
-    FinSi
-FinSi
-
-Si correcta = Verdadero Entonces
-    Escribir "Fecha correcta"
+Si A = B Y B = C Entonces
+    Escribir "Equilátero"
 Sino
-    Escribir "Fecha incorrecta"
+    Si A^2 + B^2 = C^2 O A^2 + C^2 = B^2 O B^2 + C^2 = A^2 Entonces
+        Escribir "Rectángulo"
+    Sino
+        Si A = B O A = C O B = C Entonces
+            Escribir "Isósceles"
+        Sino
+            Escribir "Escaleno"
+        FinSi
+    FinSi
 FinSi
