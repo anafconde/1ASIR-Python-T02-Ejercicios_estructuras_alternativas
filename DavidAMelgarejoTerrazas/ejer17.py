@@ -12,4 +12,4 @@ dado=int(input("Resultado dado (número): "))
 if dado<1 or dado>6:
     print("Error")
 else:
-    print(numeros[-dado])
+    print(len(numeros[-dado]))
