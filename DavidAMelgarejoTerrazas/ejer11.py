@@ -12,3 +12,12 @@ a=int(input("Lado a: "))
 b=int(input("Lado b: "))
 c=int(input("Lado c: "))
 
+if (a**2+b**2)==c**2:
+    print("Triangulo rectangulo")
+elif a==b and a==c:
+    print("Triangulo equilatero")
+elif a==b or a==c or c==b:
+    print("Triangulo isosceles")
+else:
+    print("Triangulo escaleno")
+
