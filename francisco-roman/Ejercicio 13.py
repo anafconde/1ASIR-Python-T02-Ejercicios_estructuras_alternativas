@@ -1,17 +1,8 @@
-Leer dia
-Leer mes
-Leer año
+dia = int(input("Día: "))
+mes = int(input("Mes: "))
+año = int(input("Año: "))
 
-correcta = Falso
-
-Si mes >= 1 Y mes <= 12 Entonces
-    Si dia >= 1 Y dia <= 31 Entonces
-        correcta = Verdadero
-    FinSi
-FinSi
-
-Si correcta = Verdadero Entonces
-    Escribir "Fecha correcta"
-Sino
-    Escribir "Fecha incorrecta"
-FinSi
+if 1 <= mes <= 12 and 1 <= dia <= 31:
+    print("Fecha correcta")
+else:
+    print("Fecha incorrecta")

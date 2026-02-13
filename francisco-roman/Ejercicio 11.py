@@ -1,17 +1,12 @@
-Leer A
-Leer B
-Leer C
+A = float(input("Lado A: "))
+B = float(input("Lado B: "))
+C = float(input("Lado C: "))
 
-Si A = B Y B = C Entonces
-    Escribir "Equilátero"
-Sino
-    Si A^2 + B^2 = C^2 O A^2 + C^2 = B^2 O B^2 + C^2 = A^2 Entonces
-        Escribir "Rectángulo"
-    Sino
-        Si A = B O A = C O B = C Entonces
-            Escribir "Isósceles"
-        Sino
-            Escribir "Escaleno"
-        FinSi
-    FinSi
-FinSi
+if A == B and B == C:
+    print("Equilátero")
+elif A**2 + B**2 == C**2 or A**2 + C**2 == B**2 or B**2 + C**2 == A**2:
+    print("Rectángulo")
+elif A == B or A == C or B == C:
+    print("Isósceles")
+else:
+    print("Escaleno")

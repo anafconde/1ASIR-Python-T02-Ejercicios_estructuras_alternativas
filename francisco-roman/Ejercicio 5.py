@@ -1,8 +1,7 @@
-Leer usuario
-Leer contraseña
+usuario = input("Usuario: ")
+contraseña = input("Contraseña: ")
 
-Si usuario = "pepe" Y contraseña = "asdasd" Entonces
-    Escribir "Has entrado al sistema"
-Sino
-    Escribir "Error"
-FinSi
+if usuario == "pepe" and contraseña == "asdasd":
+    print("Has entrado al sistema")
+else:
+    print("Error")

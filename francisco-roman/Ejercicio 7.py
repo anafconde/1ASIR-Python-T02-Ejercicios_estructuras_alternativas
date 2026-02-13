@@ -1,14 +1,9 @@
-Leer base
-Leer exponente
+base = float(input("Base: "))
+exponente = int(input("Exponente: "))
 
-Si exponente > 0 Entonces
-    resultado = base ^ exponente
-    Escribir resultado
-Sino
-    Si exponente = 0 Entonces
-        Escribir 1
-    Sino
-        resultado = 1 / (base ^ (exponente * -1))
-        Escribir resultado
-    FinSi
-FinSi
+if exponente > 0:
+    print(base ** exponente)
+elif exponente == 0:
+    print(1)
+else:
+    print(1 / (base ** abs(exponente)))

@@ -1,7 +1,6 @@
-Leer numero
+numero = int(input("Introduce un número: "))
 
-Si numero % 2 = 0 Entonces
-    Escribir "Es par"
-Sino
-    Escribir "Es impar"
-FinSi
+if numero % 2 == 0:
+    print("Es par")
+else:
+    print("Es impar")

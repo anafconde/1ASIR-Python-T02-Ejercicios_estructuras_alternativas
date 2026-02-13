@@ -1,8 +1,7 @@
-Leer num1
-Leer num2
+num1 = float(input("Introduce el primer número: "))
+num2 = float(input("Introduce el segundo número: "))
 
-Si num1 > num2 Entonces
-    Escribir "El primero es mayor"
-Sino
-    Escribir "El primero NO es mayor"
-FinSi
+if num1 > num2:
+    print("El primero es mayor")
+else:
+    print("El primero NO es mayor")

@@ -1,22 +1,17 @@
-Leer alumnos
+alumnos = int(input("Número de alumnos: "))
 
-Si alumnos >= 100 Entonces
-    precio_alumno = 65
-    total = alumnos * precio_alumno
-Sino
-    Si alumnos >= 50 Entonces
-        precio_alumno = 70
-        total = alumnos * precio_alumno
-    Sino
-        Si alumnos >= 30 Entonces
-            precio_alumno = 95
-            total = alumnos * precio_alumno
-        Sino
-            total = 4000
-            precio_alumno = total / alumnos
-        FinSi
-    FinSi
-FinSi
+if alumnos >= 100:
+    precio = 65
+    total = alumnos * precio
+elif alumnos >= 50:
+    precio = 70
+    total = alumnos * precio
+elif alumnos >= 30:
+    precio = 95
+    total = alumnos * precio
+else:
+    total = 4000
+    precio = total / alumnos
 
-Escribir "Cada alumno paga: ", precio_alumno
-Escribir "Total a pagar a la compañía: ", total
+print("Cada alumno paga:", precio, "€")
+print("Total a pagar:", total, "€")

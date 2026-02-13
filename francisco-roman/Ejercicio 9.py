@@ -1,36 +1,8 @@
-Leer a
-Leer b
-Leer c
+a = float(input("Número 1: "))
+b = float(input("Número 2: "))
+c = float(input("Número 3: "))
 
-Si a >= b Y a >= c Entonces
-    mayor = a
-    Si b >= c Entonces
-        medio = b
-        menor = c
-    Sino
-        medio = c
-        menor = b
-    FinSi
-Sino
-    Si b >= a Y b >= c Entonces
-        mayor = b
-        Si a >= c Entonces
-            medio = a
-            menor = c
-        Sino
-            medio = c
-            menor = a
-        FinSi
-    Sino
-        mayor = c
-        Si a >= b Entonces
-            medio = a
-            menor = b
-        Sino
-            medio = b
-            menor = a
-        FinSi
-    FinSi
-FinSi
+lista = [a, b, c]
+lista.sort(reverse=True)
 
-Escribir mayor, medio, menor
+print("Ordenados de mayor a menor:", lista[0], lista[1], lista[2])
